@@ -1,0 +1,40 @@
+practical 4.
+
+import java.util.Scanner;
+
+class A{
+	int age;
+	String name;
+	A()
+	{
+		age=age;
+		name=name;
+	}
+	A(int a ,String s){
+		age=a;
+		name = s;
+	}
+	void in()
+	{
+		Scanner sc = new Scanner(System.in);
+		age = sc.nextInt();
+		name = sc.next();
+	}
+	void display()
+	{
+		System.out.println("name"+name+"age"+age);
+	}
+}            
+public class SimpleObject {
+
+	public static void main(String[] args) {
+		A obj=new A(20,"vidushi");
+		obj.in();
+		obj.display();
+		A obj1=new A();
+		obj1.display();
+		obj1.in();
+
+	}
+
+}
