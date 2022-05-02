@@ -1,0 +1,36 @@
+package vidushi;
+
+public class Static_Class {
+	static int a=3;
+	static int b;
+	int c;
+	
+	Static_Class(int c)
+	{
+		System.out.println("Object created");
+		this.c=c;
+	}
+	static
+	{
+		System.out.println("scatic block initialized");
+		b=5;
+	}
+public static void meth()
+{
+	System.out.println(b=a*4);
+	System.out.println("value of b is" + b);
+}
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+	Static_Class S1=new Static_Class(3);
+	Static_Class.meth();
+	/*Static_Class s2 = new Static_Class(4);
+	s2.meth();
+	System.out.println(this.b);*/
+
+	}
+
+}
